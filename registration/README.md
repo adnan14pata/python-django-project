@@ -1,1 +1,0 @@
-This repository contains the user login registration form created using python and django
