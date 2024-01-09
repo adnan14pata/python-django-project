@@ -47,14 +47,14 @@ class signupform(UserCreationForm):
             }
         )
     )
-        confirmpassword = forms.CharField(
+        confpassword = forms.CharField(
         widget= forms.PasswordInput(
             attrs={
                 "class": "form-control"
             }
         )
     )
-        email = forms.TimeField(
+        emailid = forms.TimeField(
         widget= forms.EmailInput(
             attrs={
                 "class": "form-control"
@@ -71,4 +71,4 @@ class signupform(UserCreationForm):
 
 class Meta:
     model = User
-    fields = ('username','email','password','confirmpassword','address','is_patient','is_doctor')
+    fields = ('firstname','lastname','username','emailid','password','confpassword','address')
